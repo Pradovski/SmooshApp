@@ -100,7 +100,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desired League:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kMO-WK-src">
-                                <rect key="frame" x="87" y="110" width="146" height="27.5"/>
+                                <rect key="frame" x="87" y="110" width="146" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -126,8 +126,8 @@
                                     <segue destination="41U-3t-Wwi" kind="show" id="773-v2-C0u"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="vMD-bz-eMQ">
-                                <rect key="frame" x="30" y="187.5" width="260" height="250"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vMD-bz-eMQ">
+                                <rect key="frame" x="30" y="160" width="260" height="200"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTN-y8-Gub" customClass="BorderButton" customModule="SwooshApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="260" height="60"/>
@@ -141,7 +141,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bav-mQ-ZMq" customClass="BorderButton" customModule="SwooshApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="95" width="260" height="60"/>
+                                        <rect key="frame" x="0.0" y="70" width="260" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="3lG-EU-Kdi"/>
@@ -152,7 +152,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbP-7z-Z0i" customClass="BorderButton" customModule="SwooshApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="190" width="260" height="60"/>
+                                        <rect key="frame" x="0.0" y="140" width="260" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="vZv-8L-2D8"/>
@@ -164,7 +164,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="oeV-5D-amj"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="oeV-5D-amj"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfc-qj-L6R">
@@ -185,6 +185,7 @@
                             <constraint firstItem="fA6-re-0Ft" firstAttribute="bottom" secondItem="Thf-Pf-dw7" secondAttribute="bottom" constant="30" id="67d-Pd-g64"/>
                             <constraint firstItem="kMO-WK-src" firstAttribute="top" secondItem="wDU-IW-Hoc" secondAttribute="bottom" constant="50" id="8kI-n2-yEw"/>
                             <constraint firstItem="kMO-WK-src" firstAttribute="centerX" secondItem="vdG-f5-E24" secondAttribute="centerX" id="MIa-ER-RZ3"/>
+                            <constraint firstItem="Thf-Pf-dw7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vMD-bz-eMQ" secondAttribute="bottom" constant="10" id="Ma5-u2-MXF"/>
                             <constraint firstItem="zfc-qj-L6R" firstAttribute="top" secondItem="fA6-re-0Ft" secondAttribute="top" constant="10" id="O34-bM-yyH"/>
                             <constraint firstItem="zfc-qj-L6R" firstAttribute="leading" secondItem="fA6-re-0Ft" secondAttribute="leading" constant="10" id="OeV-jB-yV9"/>
                             <constraint firstItem="vMD-bz-eMQ" firstAttribute="top" secondItem="kMO-WK-src" secondAttribute="bottom" constant="50" id="X4x-Kx-0db"/>
@@ -214,7 +215,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="ukV-V6-Yrr">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="ukV-V6-Yrr">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xZ-vS-K5T">
@@ -313,8 +314,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="773-v2-C0u"/>
-        <segue reference="Sod-q0-Hjx"/>
+        <segue reference="50Y-3Z-Oym"/>
         <segue reference="daf-Cw-PVN"/>
     </inferredMetricsTieBreakers>
     <resources>
