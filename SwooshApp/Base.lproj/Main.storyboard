@@ -42,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city &amp; dominate the league" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpa-Fd-r4u">
-                                <rect key="frame" x="57" y="344.66666666666669" width="300" height="46.666666666666686"/>
+                                <rect key="frame" x="57" y="345.33333333333331" width="300" height="46.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="lTw-PC-C7U"/>
                                 </constraints>
@@ -50,9 +50,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmG-Xh-Nu3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmG-Xh-Nu3" customClass="BorderButton" customModule="SwooshApp" customModuleProvider="target">
                                 <rect key="frame" x="30" y="666" width="354" height="40"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="xhS-lH-1PH"/>
                                 </constraints>
@@ -68,11 +68,11 @@
                             <constraint firstItem="BmG-Xh-Nu3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ELU-gJ-f3D"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6LJ-fR-4E6" secondAttribute="trailing" id="HGW-xH-jPa"/>
                             <constraint firstItem="TyQ-0y-bPC" firstAttribute="top" secondItem="sb2-M0-n1m" secondAttribute="bottom" id="HSN-oe-aF9"/>
-                            <constraint firstItem="zpa-Fd-r4u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KPp-yK-40K"/>
+                            <constraint firstItem="zpa-Fd-r4u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Htf-bs-f7h"/>
                             <constraint firstItem="6LJ-fR-4E6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KWN-B7-7JW"/>
+                            <constraint firstItem="zpa-Fd-r4u" firstAttribute="top" secondItem="TyQ-0y-bPC" secondAttribute="bottom" constant="75" id="PB6-xR-YvY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BmG-Xh-Nu3" secondAttribute="bottom" constant="30" id="QuZ-5B-lsp"/>
                             <constraint firstItem="TyQ-0y-bPC" firstAttribute="centerX" secondItem="sb2-M0-n1m" secondAttribute="centerX" id="T3Q-fP-3dH"/>
-                            <constraint firstItem="zpa-Fd-r4u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ewi-mm-hKf"/>
                             <constraint firstItem="sb2-M0-n1m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m4r-Hr-8ik"/>
                             <constraint firstItem="sb2-M0-n1m" firstAttribute="top" secondItem="gnz-Fb-G9G" secondAttribute="bottom" constant="100" id="mid-1K-tMt"/>
                             <constraint firstItem="gnz-Fb-G9G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="njv-CO-nKI"/>
